@@ -4,19 +4,19 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+z
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from 1917 device
 $(call inherit-product, device/vivo/1917/device.mk)
 
 PRODUCT_DEVICE := 1917
-PRODUCT_NAME := omni_1917
+PRODUCT_NAME := twrp_1917
 PRODUCT_BRAND := vivo
 PRODUCT_MODEL := vivo 1917
 PRODUCT_MANUFACTURER := vivo
